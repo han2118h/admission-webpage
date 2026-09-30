@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University Admissions</title>
+  <style>
+ 
+    body {
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      background-color: #1a365d;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .nav {
+      background-color: #2b6cb0;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .nav-link {
+      display: inline-block; 
+      color: white;
+      text-decoration: none;
+      padding: 5px 15px;
+    }
+
+    .admission-section {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .moving-box {
+      position: relative;
+      top: -5px;
+      left: 10px;
+      display: inline-block;
+      background-color: #ffeb3b;
+      padding: 8px;
+      margin-bottom: 20px;
+    }
+
+    .card {
+      position: relative;   
+      display: inline-block;
+      vertical-align: top;
+      width: 280px;
+      height: 220px;
+      background-color: white;
+      border: 2px solid #1a365d;
+      padding: 20px;
+      margin: 15px;
+      text-align: left;
+    }
+
+    .badge {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: red;
+      color: white;
+      font-size: 12px;
+      padding: 3px 6px;
+    }
+
+    .fixed-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: green;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    @media screen and (min-width: 601px) and (max-width: 1024px) {
+      .card {
+        width: 500px;
+        margin: 30px auto;
+        padding: 25px;
+        display: block;
+        height: auto;
+      }
+    }
+
+    @media screen and (max-width: 600px), screen and (min-width: 1025px) {
+      .nav-link {
+        display: block; 
+        margin: 5px 0;
+      }
+      .card {
+        display: block;
+        width: 100%; 
+        margin: 15px 0;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>City University Admissions</h1>
+  </div>
+
+  <div class="nav">
+    <a href="#" class="nav-link">Home</a>
+    <a href="#" class="nav-link">About</a>
+    <a href="#" class="nav-link">Contact</a>
+  </div>
+
+  <div class="admission-section">
+
+    <div class="moving-box">
+      Important: Applications close next week!
+    </div>
+
+    <h2>Our Programs</h2>
+
+    <div class="card">
+      <div class="badge">Apply</div>
+      <h3>Undergraduate</h3>
+      <p>Apply for Bachelor degree programs. Find entry requirements and courses here.</p>
+    </div>
+
+    <div class="card">
+      <div class="badge">Apply</div>
+      <h3>Postgraduate</h3>
+      <p>Apply for Master degree programs. Expand your skills with advanced study.</p>
+    </div>
+
+    <div class="card">
+      <div class="badge">Apply</div>
+      <h3>PhD Programs</h3>
+      <p>Apply for Doctorate research programs. Work closely with our field experts.</p>
+    </div>
+
+  </div>
+  <button class="fixed-btn">Apply Now</button>
+
+</body>
+</html>
